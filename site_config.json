@@ -1,0 +1,24 @@
+{
+  "profile": {
+    "name": "まる",
+    "tagline": "日本株 × テクノロジー × クリエイティブ",
+    "focus_badge": "日本株特化",
+    "bio": "名古屋を拠点に活動する投資家・クリエイター。日本株を中心に、\nテクノロジーと金融の融合に魅力を感じながら日々学びを深めています。\nnoteや勉強会、プロダクトを通じて“学びを続けられる場所”を作っています。"
+  },
+  "links": {
+    "instagram_url": "https://www.instagram.com/maru_update/",
+    "instagram_label": "@maru_update",
+    "threads_url": "https://www.threads.net/@maru_update",
+    "threads_label": "@maru_update",
+    "study_form_url": ""
+  },
+  "embeds": {
+    "note": [
+      "<iframe class=\"note-embed\" src=\"https://note.com/embed/notes/n33a01c8bc70c\" style=\"border: 0; display: block; max-width: 99%; width: 494px; padding: 0px; margin: 10px 0px; position: static; visibility: visible;\" height=\"400\"></iframe><script async src=\"https://note.com/scripts/embed.js\" charset=\"utf-8\"></script>",
+      "<iframe class=\"note-embed\" src=\"https://note.com/embed/notes/neda9e548c3e1\" style=\"border: 0; display: block; max-width: 99%; width: 494px; padding: 0px; margin: 10px 0px; position: static; visibility: visible;\" height=\"400\"></iframe><script async src=\"https://note.com/scripts/embed.js\" charset=\"utf-8\"></script>",
+      "<iframe class=\"note-embed\" src=\"https://note.com/embed/notes/nc3fa3211de10\" style=\"border: 0; display: block; max-width: 99%; width: 494px; padding: 0px; margin: 10px 0px; position: static; visibility: visible;\" height=\"400\"></iframe><script async src=\"https://note.com/scripts/embed.js\" charset=\"utf-8\"></script>"
+    ],
+    "shopify": "<div id='product-component-1770925614378'></div>\n<script type=\"text/javascript\">\n/*<![CDATA[*/\n(function () {\n  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';\n  if (window.ShopifyBuy) {\n    if (window.ShopifyBuy.UI) {\n      ShopifyBuyInit();\n    } else {\n      loadScript();\n    }\n  } else {\n    loadScript();\n  }\n  function loadScript() {\n    var script = document.createElement('script');\n    script.async = true;\n    script.src = scriptURL;\n    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);\n    script.onload = ShopifyBuyInit;\n  }\n  function ShopifyBuyInit() {\n    var client = ShopifyBuy.buildClient({\n      domain: '0shhwt-xp.myshopify.com',\n      storefrontAccessToken: 'ae970d43dcae5a352d8bb24eda78403a',\n    });\n    ShopifyBuy.UI.onReady(client).then(function (ui) {\n      ui.createComponent('product', {\n        id: '15291114389664',\n        node: document.getElementById('product-component-1770925614378'),\n        moneyFormat: '%C2%A5%7B%7Bamount_no_decimals%7D%7D',\n        options: {\n  \"product\": {\n    \"styles\": {\n      \"product\": {\n        \"@media (min-width: 601px)\": {\n          \"max-width\": \"calc(25% - 20px)\",\n          \"margin-left\": \"20px\",\n          \"margin-bottom\": \"50px\"\n        }\n      }\n    },\n    \"text\": {\n      \"button\": \"Add to cart\"\n    }\n  },\n  \"productSet\": {\n    \"styles\": {\n      \"products\": {\n        \"@media (min-width: 601px)\": {\n          \"margin-left\": \"-20px\"\n        }\n      }\n    }\n  },\n  \"modalProduct\": {\n    \"contents\": {\n      \"img\": false,\n      \"imgWithCarousel\": true,\n      \"button\": false,\n      \"buttonWithQuantity\": true\n    },\n    \"styles\": {\n      \"product\": {\n        \"@media (min-width: 601px)\": {\n          \"max-width\": \"100%\",\n          \"margin-left\": \"0px\",\n          \"margin-bottom\": \"0px\"\n        }\n      }\n    },\n    \"text\": {\n      \"button\": \"Add to cart\"\n    }\n  },\n  \"option\": {},\n  \"cart\": {\n    \"text\": {\n      \"total\": \"Subtotal\",\n      \"button\": \"Checkout\"\n    }\n  },\n  \"toggle\": {}\n},\n      });\n    });\n  }\n})();\n/*]]>*/\n</script>",
+    "study_form": ""
+  }
+}
