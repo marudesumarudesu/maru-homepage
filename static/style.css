@@ -1,0 +1,122 @@
+/* 基本レイアウトと配色 */
+body {
+  margin: 0;
+  font-family: "Yu Gothic", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f9fafc;
+}
+
+header.hero {
+  background: linear-gradient(135deg, #8ec5fc 0%, #e0c3fc 100%);
+  color: #fff;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+header.hero h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: 0.1em;
+}
+
+header.hero .tagline {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+nav {
+  background: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin: 0.5rem 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  padding: 0.5rem;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #6a4c93;
+}
+
+main {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  margin-bottom: 3rem;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+  margin-top: 0;
+  color: #6a4c93;
+}
+
+.embed-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  overflow: hidden;
+}
+
+.embed-container iframe,
+.embed-container div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.market-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  background: #f1f3f8;
+  padding: 1rem;
+  border-radius: 8px;
+  flex: 1 1 200px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #6a4c93;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  background: #ffffff;
+  border-top: 1px solid #e4e7ee;
+  color: #777;
+}

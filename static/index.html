@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>まるのホームページ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <h1>まるのホームページ</h1>
+    <p class="tagline">日本株とクリエイティブの世界をつなぐ</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#intro">自己紹介</a></li>
+      <li><a href="#blog">ブログ</a></li>
+      <li><a href="#shop">ショップ</a></li>
+      <li><a href="#instagram">Instagram</a></li>
+      <li><a href="#threads">Threads</a></li>
+      <li><a href="#signup">勉強会</a></li>
+      <li><a href="#market">市場指数</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="intro">
+      <h2>自己紹介</h2>
+      <p>こんにちは、まるです。名古屋で投資と創作活動を楽しんでいます。日本株を中心に学びを深めつつ、イベントや勉強会を通じてコミュニティと交流しています。</p>
+    </section>
+    <section id="blog">
+      <h2>ブログ (note)</h2>
+      <p>最新の記事をこちらでご紹介します。</p>
+      <!-- note の iframe 埋め込みコードをここに貼り付けてください -->
+      <div class="embed-container">
+        <!-- 例: <iframe src="https://note.com/your_article" width="100%" height="600" frameborder="0"></iframe> -->
+      </div>
+    </section>
+    <section id="shop">
+      <h2>オンラインショップ</h2>
+      <p>おすすめの商品はこちらからご購入いただけます。</p>
+      <!-- Shopify Buy Button のコードをここに貼り付けてください -->
+      <div class="embed-container">
+        <!-- 埋め込みコード貼り付け場所 -->
+      </div>
+    </section>
+    <section id="instagram">
+      <h2>Instagram</h2>
+      <p>インスタグラムの投稿を紹介します。</p>
+      <div class="embed-container">
+        <!-- Instagram 埋め込みコードをここに貼り付けてください -->
+      </div>
+    </section>
+    <section id="threads">
+      <h2>Threads</h2>
+      <p>Threads の投稿を紹介します。</p>
+      <div class="embed-container">
+        <!-- Threads 埋め込みコードをここに貼り付けてください -->
+      </div>
+    </section>
+    <section id="signup">
+      <h2>勉強会申し込み</h2>
+      <p>以下のフォームから勉強会へお申し込みください。</p>
+      <!-- Google Forms の iframe コードをここに貼り付けてください -->
+      <div class="embed-container">
+        <!-- Google Form 埋め込みコード貼り付け場所 -->
+      </div>
+    </section>
+    <section id="market">
+      <h2>市場指数</h2>
+      <div class="market-cards">
+        <div class="card">
+          <h3>日経平均株価</h3>
+          <p id="nikkei">--</p>
+        </div>
+        <div class="card">
+          <h3>ドル円 (USD/JPY)</h3>
+          <p id="usd-jpy">--</p>
+        </div>
+        <div class="card">
+          <h3>日本10年債利回り</h3>
+          <p id="jgb-yield">--</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 まる All rights reserved.</p>
+  </footer>
+  <script>
+    // JavaScriptでAPIを呼び出し指数を取得する例（実際にはCORSポリシー等に留意してください）
+    async function fetchMarket() {
+      try {
+        // ダミーの JSON ファイルを取得する例
+        const response = await fetch('market.json');
+        const data = await response.json();
+        document.getElementById('nikkei').textContent = data.nikkei || '--';
+        document.getElementById('usd-jpy').textContent = data.usdjpy || '--';
+        document.getElementById('jgb-yield').textContent = data.jgb_yield || '--';
+      } catch (e) {
+        console.error(e);
+      }
+    }
+    fetchMarket();
+  </script>
+</body>
+</html>
